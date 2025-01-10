@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "/products/:id/edit", to: "products#edit"
   patch "/products/:id", to: "products#update"
   put "/products/:id", to: "products#update"
+  get 'login', to: 'sessions#new', as: 'login'
 
   delete "/products/:id", to: "products#destroy"
 
